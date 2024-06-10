@@ -1,0 +1,45 @@
+.book-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-card.added {
+    background-color: #e0ffe0;
+  }
+  
+  .book-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .book-card .publisher {
+    font-style: italic;
+  }
+  
+  .book-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-card button.added-button {
+    background-color: #28a745;
+    cursor: default;
+  }
+  
+  .book-card button:hover:not(.added-button) {
+    background-color: #0056b3;
+  }
+  

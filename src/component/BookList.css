@@ -1,0 +1,97 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px; /* Added gap to provide space between cards */
+    margin: 2px;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px; /* Adjusted margin to work with gap */
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    flex: 1 1 calc(33.333% - 40px); /* Adjusted calculation for the new gap */
+    box-sizing: border-box;
+  }
+  
+  .book-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .book-card p {
+    margin: 4px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .book-card button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .book-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-card .publisher {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    display: inline-block;
+  }
+  .book-card .author {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+    display: inline-block;
+  }
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .book-card {
+      flex: 1 1 calc(50% - 40px); /* Adjusted calculation for the new gap */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .book-card {
+      flex: 1 1 calc(100% - 40px); /* Adjusted calculation for the new gap */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-card {
+      margin: 16px 0;
+      padding: 12px;
+    }
+  
+    .book-card h3 {
+      font-size: 1rem;
+    }
+  
+    .book-card p {
+      font-size: 0.875rem;
+    }
+  
+    .book-card button {
+      padding: 6px 12px;
+    }
+  }
+  

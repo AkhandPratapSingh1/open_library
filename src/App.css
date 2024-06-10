@@ -1,0 +1,32 @@
+
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.book-card button:hover {
+  background-color: #0056b3;
+}
